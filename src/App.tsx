@@ -1,16 +1,19 @@
-import EstiloGlobal from './styles'
-import Sobre from './containers/Sidebar/About'
+import EstiloGlobal, { Container } from './styles'
+import Sobre from './containers/Sidebar/Sobre/About'
 import Sidebar from './containers/Sidebar'
+import Projetos from './containers/Projetos'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <Sidebar />
-      <main>
-        <Sobre />
-        <section>Projetos</section>
-      </main>
+      <Container>
+        <Sidebar />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
